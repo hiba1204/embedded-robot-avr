@@ -1,0 +1,25 @@
+
+dbt;
+
+trg;
+
+sgo 45;
+
+sgo 60;
+
+sgo 75;
+
+att 3;
+
+fin;
+
+%progmem -o bytecode.bin program.txt
+%serieViaUSB -e -f bytecode.bin
+
+
+
+
+
+
+
+
