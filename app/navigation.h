@@ -55,12 +55,6 @@ private:
 
     void flashGreen();
 
-    // void turn90DegreesFollowingDirection();
-    // void reverse90DegreesFollowingDirection();
-
-    // void exitEvacuationRoom();
-    //  void exitStorageRoom();
-
     Motor &motor_;
     Sound &sound_;
     InstructionData &data_;

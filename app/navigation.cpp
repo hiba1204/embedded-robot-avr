@@ -163,7 +163,7 @@ void Navigation::turnIntersectionInnerWall()
 void Navigation::crossParkingSpots()
 {
     uint8_t target = data_.parkingSpot;
-    uint8_t spotsToCross = data_.isClockwise ? (6 - target) : (target + 1);
+    uint8_t spotsToCross = data_.isClockwise ? (5 - target) : (target);
 
     for (uint8_t i = 0; i < spotsToCross - 1; ++i)
     {
