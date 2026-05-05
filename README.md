@@ -24,7 +24,7 @@ Fully autonomous robot that navigates a predefined map without human interventio
 | Interrupt button | PD2 | Mode selection trigger |
 | EEPROM (I2C) | PC0 (SCL), PC1 (SDA) | Persistent instruction storage |
 | UART | PD0 (RXD), PD1 (TXD) | Debug communication |
-| SPI programmer | PB4–PB7 | Flashing firmware (disconnect motors first) |
+| SPI programmer | PB4–PB7 | Flashing firmware |
 
 ### Full Pinout
 
@@ -126,7 +126,7 @@ SOUTH_TO_CORRIDOR ──(intersection detected)──▶ IN_CORRIDOR
 3. Counts evacuated people and flashes green LED for each one
 
 **Storage room** — `inspectStorageRoom()`:
-1. Robot scans with distance sensor
+1. Robot scans with linesensors
 2. Detects and reports debris presence without evacuation
 
 ---
@@ -162,7 +162,6 @@ Key design choices:
 make
 
 # Flash to robot
-# ⚠️ Disconnect motors before flashing (PB4–PB7 shared with SPI programmer)
 make install
 
 # Clean build artifacts
