@@ -179,8 +179,3 @@ make clean
 - `avrdude` for flashing
 - `simavr` headers (for simulation)
 - Standard AVR libs: `<avr/io.h>`, `<util/delay.h>`, `<avr/interrupt.h>`
-## Project Overview
-Autonomous robot programmed in C (AVR) on an ATmega324PA microcontroller.
-The robot navigates a predefined map: exits a parking spot, traverses 
-corridors while inspecting floor , inspects rooms (classrooms & storage rooms), and returns 
-to park — all using line sensors and a finite state machine.
